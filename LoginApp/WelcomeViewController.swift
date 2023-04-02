@@ -10,11 +10,13 @@ import UIKit
 final class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var handLabel: UILabel!
 
     var userName: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        handLabel.text = "👋"
         welcomeLabel.text = userName
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
