@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class LoginViewController: UIViewController {
 
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
@@ -17,9 +17,9 @@ final class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if userNameTF.text == "Kirill" && passwordTF.text == "12345" {
-            guard let secondVC = segue.destination as? SecondViewController else { return }
-            secondVC.userName = userNameTF.text
+        if userNameTF.text == "1" && passwordTF.text == "1" {
+            guard let secondVC = segue.destination as? WelcomeViewController else { return }
+            secondVC.userName = "Welcome, \(userNameTF.text ?? "")!"
         } else {
             showAlert(
                 withTitle: "Alert!",
@@ -28,17 +28,28 @@ final class ViewController: UIViewController {
         }
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        userNameTF.resignFirstResponder()
+        passwordTF.resignFirstResponder()
+    }
+
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameTF.text = ""
+        passwordTF.text = ""
+    }
+
     @IBAction func forgotNameButtonTapped(_ sender: UIButton) {
         showAlert(
             withTitle: "Forgot User Name",
-            andMessage: "You User Name is Kirill"
+            andMessage: "You User Name is 1"
         )
     }
 
     @IBAction func forgotPasswordButtonTapped(_ sender: UIButton) {
         showAlert(
             withTitle: "Forgot password",
-            andMessage: "You password 12345"
+            andMessage: "You password 1"
         )
     }
 
