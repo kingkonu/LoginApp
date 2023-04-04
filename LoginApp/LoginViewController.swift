@@ -3,7 +3,7 @@
 //  LoginApp
 //
 //  Created by Alexey Kanaev on 4/1/23.
-//
+//  test
 
 import UIKit
 
@@ -11,10 +11,6 @@ final class LoginViewController: UIViewController {
 
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if userNameTF.text == "1" && passwordTF.text == "1" {
