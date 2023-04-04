@@ -12,22 +12,17 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
 
+    private let user = "User"
+    private let password = "Password"
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if userNameTF.text == "1" && passwordTF.text == "1" {
-            guard let secondVC = segue.destination as? WelcomeViewController else { return }
-            secondVC.userName = "Welcome, \(userNameTF.text ?? "")!"
-        } else {
-            showAlert(
-                withTitle: "Alert!",
-                andMessage: "Error User Name or Password"
-            )
-        }
+        guard let secondVC = segue.destination as? WelcomeViewController else { return }
+        secondVC.userName = user
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
-        userNameTF.resignFirstResponder()
-        passwordTF.resignFirstResponder()
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
 
     @IBAction func unwind(for segue: UIStoryboardSegue) {
