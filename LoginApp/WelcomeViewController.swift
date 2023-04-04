@@ -16,7 +16,6 @@ final class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        handLabel.text = "👋"
         welcomeLabel.text = userName
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
