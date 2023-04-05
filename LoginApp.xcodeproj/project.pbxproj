@@ -294,6 +294,7 @@
 				DEVELOPMENT_TEAM = CY5RNY433D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AboutMe;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,6 +326,7 @@
 				DEVELOPMENT_TEAM = CY5RNY433D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AboutMe;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
