@@ -9,8 +9,13 @@ import UIKit
 
 final class ThirdViewController: UIViewController {
 
+    @IBOutlet weak var hobbyLabel: UILabel!
+
+    var hobby = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        hobbyLabel.text = hobby
     }
 
 }
