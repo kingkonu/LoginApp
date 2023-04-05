@@ -30,11 +30,11 @@ final class LoginViewController: UIViewController {
                 welcomeVC.userName = user
             } else if let secondVC = viewController as? SecondViewController {
 
-            } else if let thirdVC = viewController as? ThirdViewController {
-
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let thirdVC = navigationVC.topViewController as? ThirdViewController else { return }
+                thirdVC.title = user
             }
         }
-
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
