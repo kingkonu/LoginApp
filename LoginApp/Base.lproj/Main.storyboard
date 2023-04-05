@@ -75,14 +75,14 @@
                     <connections>
                         <outlet property="passwordTF" destination="UHr-ST-wbj" id="kfg-dU-8qJ"/>
                         <outlet property="userNameTF" destination="SSv-q1-rdM" id="YEn-LH-1iO"/>
-                        <segue destination="lec-nc-5jk" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="o95-YG-Nka"/>
+                        <segue destination="qLs-eh-QC1" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="o95-YG-Nka"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="24.647887323943664"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--First-->
         <scene sceneID="rdQ-4d-8ZC">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="lec-nc-5jk" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,6 +126,7 @@
                             <constraint firstItem="Dce-PN-od1" firstAttribute="centerX" secondItem="Nc0-Qp-3Nz" secondAttribute="centerX" id="p6D-MX-AuB"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="First" image="figure.run" catalog="system" id="7rf-2G-gca"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="YAo-2p-zii" id="GyU-Ye-an0"/>
                     </connections>
@@ -133,10 +134,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RlI-o3-f4P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="3d2-su-IOO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+            <point key="canvasLocation" x="859" y="865"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="X11-PN-7lg">
+            <objects>
+                <viewController id="irK-3W-Vdu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="55n-kc-zC7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSW-NH-HZf">
+                                <rect key="frame" x="123" y="399" width="147" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t0q-C9-5iv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RSW-NH-HZf" firstAttribute="centerX" secondItem="55n-kc-zC7" secondAttribute="centerX" id="10V-r0-4jt"/>
+                            <constraint firstItem="RSW-NH-HZf" firstAttribute="centerY" secondItem="55n-kc-zC7" secondAttribute="centerY" id="fPI-bE-U1R"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="figure.skiing.crosscountry" catalog="system" id="Eoo-4i-3ge"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztJ-tk-Zus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="865"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="5g2-fX-2HW">
+            <objects>
+                <viewController id="YQj-4E-Otl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aiV-oO-TM2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sij-mW-dVu">
+                                <rect key="frame" x="146.66666666666666" y="399" width="100" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CBc-Pl-1uD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sij-mW-dVu" firstAttribute="centerY" secondItem="aiV-oO-TM2" secondAttribute="centerY" id="K6Y-Om-jmC"/>
+                            <constraint firstItem="Sij-mW-dVu" firstAttribute="centerX" secondItem="aiV-oO-TM2" secondAttribute="centerX" id="yuL-6U-eKi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" image="figure.climbing" catalog="system" id="OcZ-uB-QlV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHn-jb-HID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486" y="865"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DsO-b8-frU">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qLs-eh-QC1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vbp-pB-1eS">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lec-nc-5jk" kind="relationship" relationship="viewControllers" id="llx-jJ-POo"/>
+                        <segue destination="irK-3W-Vdu" kind="relationship" relationship="viewControllers" id="YNb-co-gTf"/>
+                        <segue destination="YQj-4E-Otl" kind="relationship" relationship="viewControllers" id="YGf-qQ-hk6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQM-7E-tX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="858.77862595419845" y="24.647887323943664"/>
         </scene>
     </scenes>
     <resources>
+        <image name="figure.climbing" catalog="system" width="108" height="128"/>
+        <image name="figure.run" catalog="system" width="115" height="128"/>
+        <image name="figure.skiing.crosscountry" catalog="system" width="128" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
