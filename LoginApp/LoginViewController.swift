@@ -22,8 +22,19 @@ final class LoginViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let secondVC = segue.destination as? WelcomeViewController else { return }
-        secondVC.userName = user
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+
+        viewControllers.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userName = user
+            } else if let secondVC = viewController as? SecondViewController {
+
+            } else if let thirdVC = viewController as? ThirdViewController {
+
+            }
+        }
+
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -55,7 +66,11 @@ final class LoginViewController: UIViewController {
         : showAlert(withTitle: "Oops!", andMessage: "Твой пароль \(password)")
     }
 
-    private func showAlert(withTitle title: String, andMessage message: String, textField: UITextField? = nil) {
+    private func showAlert(
+        withTitle title: String,
+        andMessage message: String,
+        textField: UITextField? = nil
+    ) {
         let alert = UIAlertController(
             title: title,
             message: message,
