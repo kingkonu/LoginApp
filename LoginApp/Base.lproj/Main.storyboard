@@ -164,33 +164,21 @@
             </objects>
             <point key="canvasLocation" x="1651" y="865"/>
         </scene>
-        <!--Third-->
-        <scene sceneID="5g2-fX-2HW">
+        <!--Third View Controller-->
+        <scene sceneID="oV3-2y-PdF">
             <objects>
-                <viewController id="YQj-4E-Otl" customClass="ThirdViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aiV-oO-TM2">
+                <viewController id="wio-Ww-tXe" customClass="ThirdViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SjO-CO-CY7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sij-mW-dVu">
-                                <rect key="frame" x="146.66666666666666" y="399" width="100" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="CBc-Pl-1uD"/>
+                        <viewLayoutGuide key="safeArea" id="t14-PH-s2K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Sij-mW-dVu" firstAttribute="centerY" secondItem="aiV-oO-TM2" secondAttribute="centerY" id="K6Y-Om-jmC"/>
-                            <constraint firstItem="Sij-mW-dVu" firstAttribute="centerX" secondItem="aiV-oO-TM2" secondAttribute="centerX" id="yuL-6U-eKi"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" image="figure.climbing" catalog="system" id="OcZ-uB-QlV"/>
+                    <navigationItem key="navigationItem" id="uud-7T-3xa"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SHn-jb-HID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBK-oy-e83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486" y="865"/>
+            <point key="canvasLocation" x="3568.7022900763359" y="864.78873239436621"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DsO-b8-frU">
@@ -205,12 +193,31 @@
                     <connections>
                         <segue destination="lec-nc-5jk" kind="relationship" relationship="viewControllers" id="llx-jJ-POo"/>
                         <segue destination="irK-3W-Vdu" kind="relationship" relationship="viewControllers" id="YNb-co-gTf"/>
-                        <segue destination="YQj-4E-Otl" kind="relationship" relationship="viewControllers" id="YGf-qQ-hk6"/>
+                        <segue destination="VuW-1w-tXC" kind="relationship" relationship="viewControllers" id="czk-Sf-Dh5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQM-7E-tX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="858.77862595419845" y="24.647887323943664"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="OzR-l3-bmJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VuW-1w-tXC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Third" image="figure.climbing" catalog="system" id="WFr-Ba-RyL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jMe-qJ-jbT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wio-Ww-tXe" kind="relationship" relationship="rootViewController" id="miO-cx-InO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wm-Ak-q8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2641.9847328244273" y="864.78873239436621"/>
         </scene>
     </scenes>
     <resources>
