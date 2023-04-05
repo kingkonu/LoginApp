@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="q73-4J-Xda">
-                                <rect key="frame" x="48.333333333333343" y="312.66666666666669" width="296.33333333333326" height="226.66666666666669"/>
+                                <rect key="frame" x="48.333333333333343" y="280.66666666666669" width="296.33333333333326" height="226.66666666666669"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSv-q1-rdM">
                                         <rect key="frame" x="0.0" y="0.0" width="296.33333333333331" height="34"/>
@@ -34,7 +34,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
-                                            <segue destination="lec-nc-5jk" kind="presentation" modalPresentationStyle="fullScreen" id="v1z-G1-6cf"/>
+                                            <action selector="logInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="WdN-hI-5GP"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="YDh-lp-vIZ">
@@ -50,14 +50,14 @@
                                                     <action selector="forgotNameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VGM-AD-c5Q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rO-AK-f2D">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rO-AK-f2D">
                                                 <rect key="frame" x="162.66666666666669" y="0.0" width="133.66666666666669" height="28.333333333333332"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotPasswordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWj-ys-7ft"/>
+                                                    <action selector="forgotNameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiW-sG-o7h"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -68,13 +68,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="q73-4J-Xda" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y6n-Yc-7lB"/>
                             <constraint firstItem="q73-4J-Xda" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ftu-dN-J2l"/>
+                            <constraint firstItem="q73-4J-Xda" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-32" id="gNF-0K-eHe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordTF" destination="UHr-ST-wbj" id="kfg-dU-8qJ"/>
                         <outlet property="userNameTF" destination="SSv-q1-rdM" id="YEn-LH-1iO"/>
+                        <segue destination="lec-nc-5jk" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="o95-YG-Nka"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -126,7 +127,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="handLabel" destination="myF-sN-ZgK" id="WEt-G3-P8a"/>
                         <outlet property="welcomeLabel" destination="YAo-2p-zii" id="GyU-Ye-an0"/>
                     </connections>
                 </viewController>
