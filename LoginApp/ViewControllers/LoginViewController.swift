@@ -12,13 +12,14 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
 
-    private let user = "Alexey"
-    private let password = "password"
+    private let user = User.getUser()
+//    private let password = "
+//    private let loginCot =
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameTF.text = user
-        passwordTF.text = password
+        userNameTF.text = user.login
+        passwordTF.text = user.password
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,12 +28,12 @@ final class LoginViewController: UIViewController {
 
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.userName = user
+                welcomeVC.userName = user.person.name
             } else if let secondVC = viewController as? SecondViewController {
 
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let thirdVC = navigationVC.topViewController as? ThirdViewController else { return }
-                thirdVC.title = user
+                thirdVC.title = user.person.profession
             }
         }
     }
@@ -48,7 +49,7 @@ final class LoginViewController: UIViewController {
     }
 
     @IBAction func logInPressed() {
-        guard userNameTF.text == user, passwordTF.text == password
+        guard userNameTF.text == user.login, passwordTF.text == user.password
         else {
             showAlert(
                 withTitle: "Неверный логин или пароль",
@@ -62,8 +63,8 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotNameButtonTapped(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(withTitle: "Oops!", andMessage: "Твой логин \(user)")
-        : showAlert(withTitle: "Oops!", andMessage: "Твой пароль \(password)")
+        ? showAlert(withTitle: "Oops!", andMessage: "Твой логин \(user.login)")
+        : showAlert(withTitle: "Oops!", andMessage: "Твой пароль \(user.password)")
     }
 
     private func showAlert(
