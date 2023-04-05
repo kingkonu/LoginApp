@@ -33,10 +33,10 @@ final class LoginViewController: UIViewController {
                 secondVC.userName = user.person.name
                 secondVC.surName = user.person.surname
                 secondVC.profession = user.person.profession
-                secondVC.hobby = user.person.hobby
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let thirdVC = navigationVC.topViewController as? ThirdViewController else { return }
-                thirdVC.title = user.person.profession
+                thirdVC.title = "Увлечения"
+                thirdVC.hobby = user.person.hobby
             }
         }
     }
