@@ -10,7 +10,9 @@ import UIKit
 final class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
-
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    var loginName = ""
     var userName = ""
 
     private let primaryColor = UIColor(
@@ -32,7 +34,8 @@ final class WelcomeViewController: UIViewController {
             topColor: primaryColor,
             bottomColor: secondaryColor
         )
-        welcomeLabel.text = "Welcome, \(userName)!"
+        welcomeLabel.text = "Welcome, \(loginName)!"
+        nameLabel.text = "My name is \(userName)"
     }
 }
 
