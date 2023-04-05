@@ -12,8 +12,8 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
 
-    private let user = "User"
-    private let password = "Password"
+    private let user = "1"
+    private let password = "1"
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let secondVC = segue.destination as? WelcomeViewController else { return }
@@ -30,32 +30,36 @@ final class LoginViewController: UIViewController {
         passwordTF.text = ""
     }
 
+    @IBAction func logInPressed() {
+        guard userNameTF.text == user, passwordTF.text == password
+        else {
+            showAlert(
+                withTitle: "Неверный логин или пароль",
+                andMessage: "Введите правильный логин и пароль",
+                textField: passwordTF
+            )
+            return
+        }
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
+    }
+    
     @IBAction func forgotNameButtonTapped(_ sender: UIButton) {
-        showAlert(
-            withTitle: "Forgot User Name",
-            andMessage: "You User Name is 1"
-        )
+        sender.tag == 0
+        ? showAlert(withTitle: "Oops!", andMessage: "Твой логин \(user)")
+        : showAlert(withTitle: "Oops!", andMessage: "Твой пароль \(password)")
     }
 
-    @IBAction func forgotPasswordButtonTapped(_ sender: UIButton) {
-        showAlert(
-            withTitle: "Forgot password",
-            andMessage: "You password 1"
-        )
-    }
-
-    private func showAlert(withTitle title: String, andMessage message: String) {
+    private func showAlert(withTitle title: String, andMessage message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(
             title: title,
             message: message,
             preferredStyle: .alert
         )
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            self.passwordTF.text = ""
+            textField?.text = ""
         }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-
 }
 
