@@ -139,7 +139,7 @@
         <!--Second-->
         <scene sceneID="X11-PN-7lg">
             <objects>
-                <viewController id="irK-3W-Vdu" sceneMemberID="viewController">
+                <viewController id="irK-3W-Vdu" customClass="SecondViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="55n-kc-zC7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +167,7 @@
         <!--Third-->
         <scene sceneID="5g2-fX-2HW">
             <objects>
-                <viewController id="YQj-4E-Otl" sceneMemberID="viewController">
+                <viewController id="YQj-4E-Otl" customClass="ThirdViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aiV-oO-TM2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,6 +198,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qLs-eh-QC1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vbp-pB-1eS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
