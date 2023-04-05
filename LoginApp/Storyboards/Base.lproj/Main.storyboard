@@ -157,7 +157,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="gst-Xb-7A4">
-                                <rect key="frame" x="101.66666666666669" y="206" width="190" height="440"/>
+                                <rect key="frame" x="101.66666666666669" y="204.33333333333334" width="190" height="443.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evr-VY-cEZ">
                                         <rect key="frame" x="54.999999999999986" y="0.0" width="80.000000000000014" height="40.666666666666664"/>
@@ -166,16 +166,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzg-CC-ltp">
-                                        <rect key="frame" x="50.999999999999986" y="123.66666666666669" width="88.000000000000014" height="98"/>
+                                        <rect key="frame" x="50.999999999999986" y="123.66666666666666" width="88.000000000000014" height="98"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="82"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="zbJ-jc-CeW">
-                                        <rect key="frame" x="0.0" y="304.66666666666669" width="190" height="135.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="304.66666666666663" width="190" height="139"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="s92-Cj-y4I">
-                                                <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="135.33333333333334"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="s92-Cj-y4I">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="139"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-88-JR9">
                                                         <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="26.333333333333332"/>
@@ -184,48 +184,36 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLV-sz-PZa">
-                                                        <rect key="frame" x="0.0" y="36.333333333333314" width="98" height="26.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="56.333333333333378" width="98" height="26.333333333333336"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профессия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhE-Kg-yfv">
-                                                        <rect key="frame" x="0.0" y="72.666666666666686" width="119.66666666666667" height="26.333333333333329"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Увлечения:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-kM-d9H">
-                                                        <rect key="frame" x="0.0" y="108.99999999999994" width="111.66666666666667" height="26.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="112.66666666666663" width="119.66666666666667" height="26.333333333333343"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-Tq-6xH">
-                                                <rect key="frame" x="148.66666666666669" y="0.0" width="41.333333333333343" height="135.33333333333334"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-Tq-6xH">
+                                                <rect key="frame" x="148.66666666666669" y="0.0" width="41.333333333333343" height="139"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnj-pZ-3Lp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="32.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="38.333333333333336"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6E-as-gLR">
-                                                        <rect key="frame" x="0.0" y="46.333333333333314" width="41.333333333333336" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="68.333333333333371" width="41.333333333333336" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLj-Tq-jwJ">
-                                                        <rect key="frame" x="0.0" y="80.666666666666686" width="41.333333333333336" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5u-5K-SUu">
-                                                        <rect key="frame" x="0.0" y="114.99999999999994" width="41.333333333333336" height="20.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="118.66666666666661" width="41.333333333333336" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -246,7 +234,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="figure.skiing.crosscountry" catalog="system" id="Eoo-4i-3ge"/>
                     <connections>
-                        <outlet property="hobbyLabel" destination="H5u-5K-SUu" id="h4e-86-cot"/>
                         <outlet property="myNameLabel" destination="Evr-VY-cEZ" id="ozH-VY-BvX"/>
                         <outlet property="professionLabel" destination="JLj-Tq-jwJ" id="6uU-Kj-N2c"/>
                         <outlet property="surnameLabel" destination="a6E-as-gLR" id="g7g-rj-p9M"/>
@@ -264,10 +251,25 @@
                     <view key="view" contentMode="scaleToFill" id="SjO-CO-CY7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzX-ch-pCT">
+                                <rect key="frame" x="172.66666666666666" y="414" width="48" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t14-PH-s2K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hzX-ch-pCT" firstAttribute="centerY" secondItem="SjO-CO-CY7" secondAttribute="centerY" id="TpQ-mi-cj4"/>
+                            <constraint firstItem="hzX-ch-pCT" firstAttribute="centerX" secondItem="SjO-CO-CY7" secondAttribute="centerX" id="gkz-Bt-oXR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uud-7T-3xa"/>
+                    <connections>
+                        <outlet property="hobbyLabel" destination="hzX-ch-pCT" id="ayC-iP-OAJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBK-oy-e83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
