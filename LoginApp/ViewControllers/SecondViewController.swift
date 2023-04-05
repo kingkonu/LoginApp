@@ -19,7 +19,6 @@ final class SecondViewController: UIViewController {
     var userName = ""
     var surName = ""
     var profession = ""
-    var hobby = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +26,6 @@ final class SecondViewController: UIViewController {
         userNameLabel.text = userName
         surnameLabel.text = surName
         professionLabel.text = profession
-        hobbyLabel.text = hobby
     }
 
 }
